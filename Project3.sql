@@ -217,10 +217,10 @@ REFERENCES Movie (Id);
 
 ALTER TABLE TV_reviews
 ADD CONSTRAINT tv_reviews_id_fk FOREIGN KEY (Id)
-REFERNCES TV_show (Id);
+REFERENCES TV_show (Id);
 
 ALTER TABLE MV_reviews
 ADD CONSTRAINT mv_reviews_id_fk FOREIGN KEY (Id)
-REFERNCES Movie (Id);
+REFERENCES Movie (Id);
 
     
