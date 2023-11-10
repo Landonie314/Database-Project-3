@@ -22,7 +22,7 @@ DROP TABLE TV_reviews CASCADE CONSTRAINTS;
 CREATE TABLE Writer
   (Height	NUMBER(3,2),
    Birthday	DATE,
-   Trademark	VARCHAR2(100),
+   Trademark	VARCHAR2(500),
    Nickname	VARCHAR2(30),
    Name		VARCHAR2(40),
    CONSTRAINT writer_name_pk PRIMARY KEY (Name)
@@ -31,7 +31,7 @@ CREATE TABLE Writer
 CREATE TABLE Actor
   (Height	NUMBER(3,2),
    Birthday	DATE,
-   Trademark	VARCHAR2(100),
+   Trademark	VARCHAR2(500),
    Nickname	VARCHAR2(30),
    Name		VARCHAR2(40),
    CONSTRAINT actor_name_pk PRIMARY KEY (Name)
@@ -40,7 +40,7 @@ CREATE TABLE Actor
 CREATE TABLE Director
   (Height	NUMBER(3,2),
    Birthday	DATE,
-   Trademark	VARCHAR2(100),
+   Trademark	VARCHAR2(500),
    Nickname	VARCHAR2(30),
    Name		VARCHAR2(40),
    CONSTRAINT director_name_pk PRIMARY KEY (Name)
@@ -53,7 +53,7 @@ CREATE TABLE TV_show
    Age_Rating	VARCHAR2(5),
    Seasons	NUMBER(2),
    Year		NUMBER(4),
-   Storyline	VARCHAR2(200),
+   Storyline	VARCHAR2(500),
    CONSTRAINT tv_show_id_pk PRIMARY KEY (Id)
 );
 
@@ -63,8 +63,8 @@ CREATE TABLE Movie
    Age_Rating	VARCHAR2(5),
    Runtime	NUMBER(3),
    Year		NUMBER(4),
-   Storyline	VARCHAR2(200),
-   Description  VARCHAR2(150),
+   Storyline	VARCHAR2(500),
+   Description  VARCHAR2(500),
    Metascore	CHAR(3),
    CONSTRAINT movie_id_pk PRIMARY KEY (Id)
 );
